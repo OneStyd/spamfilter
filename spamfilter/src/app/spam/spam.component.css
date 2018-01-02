@@ -1,0 +1,7 @@
+td:nth-of-type(1) {
+    display: none;
+}
+
+.unread {
+    background: #ddd;
+}

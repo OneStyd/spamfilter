@@ -19,9 +19,23 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/css/bootstrap.min.css",
+        "assets/css/font-awesome.min.css",
+        "assets/css/dataTables.bootstrap.min.css",
+        "assets/css/AdminLTE.min.css",
+        "assets/css/_all-skins.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/jquery.min.js",     
+        "assets/js/bootstrap.min.js",
+        "assets/js/jquery.dataTables.min.js",
+        "assets/js/dataTables.bootstrap.min.js",
+        "assets/js/jquery.slimscroll.min.js",        
+        "assets/js/fastclick.js",        
+        "assets/js/adminlte.min.js",
+        "assets/js/custom.js"    
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

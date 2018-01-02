@@ -1,0 +1,10 @@
+.justspace {
+    height: 40px;
+}
+
+img {
+    width: 70%;
+    position: relative;
+    display: block;
+    margin: auto;
+}
