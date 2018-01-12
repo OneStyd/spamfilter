@@ -14,15 +14,15 @@
         <div class="box box-primary">
           <div class="box-body no-padding">
             <div class="mailbox-read-info">
-              <h3>{{ mailContent.title }}</h3>
-              <h5>From: {{ mailContent.sender }}
+              <h3>{{ mailContent.subject }}</h3>
+              <h5>From: {{ mailContent.frommail }}
                 <span class="mailbox-read-time pull-right">{{ mailContent.date }}</span></h5>
             </div>
             <div class="mailbox-read-message">
               {{ mailContent.content }}
             </div>
           </div>
-          <div class="box-footer">
+          <!-- <div class="box-footer">
             <div class="pull-right">
               <span data-toggle="modal" data-target="#reply-mail">
                 <button type="button" class="btn btn-default"><i class="fa fa-reply"></i> Reply</button>
@@ -33,7 +33,7 @@
             </div>
             <button type="button" class="btn btn-default" (click)="deleteThis()"><i class="fa fa-trash-o"></i> Delete</button>
             <button type="button" class="btn btn-default" (click)="printThis()"><i class="fa fa-print"></i> Print</button>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>

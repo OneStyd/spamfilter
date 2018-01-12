@@ -29,7 +29,7 @@ export class SentComponent implements OnInit {
         'order': [[ 0, 'desc' ]],
         'columnDefs': [ { 'searchable': false, 'targets': 0 } ]
       } );
-    }, 10);
+    }, 1000);
   }
 
   readThis(mailId) {

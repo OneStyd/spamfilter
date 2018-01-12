@@ -1,0 +1,1 @@
+Re  RH   no DMA for DVD driveOn Sun             at        Alvie wrote    hdparm  d   dev hdc says Operation not Permitted    DVD playback is very jumpy    Does someone have any ideas on what I can do yo get DMA transfers    Thanks Alvie  Add to  etc modules conf   options ide cd dma        Chris Kloiber                                                  RPM List mailing list       

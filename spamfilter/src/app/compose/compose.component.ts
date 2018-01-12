@@ -10,6 +10,7 @@ import { AppService } from '../app.service';
 })
 export class ComposeComponent implements OnInit {
 
+
   constructor(
     private DataService: AppService,
     private router: Router,
@@ -17,6 +18,14 @@ export class ComposeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+  }
+
+  doTextareaValueChange(ev) {
+    try {
+      this.DataService.textareaValue = ev.target.value;
+    } catch(e) {
+      console.info('could not set textarea-value');
+    }
   }
 
 }

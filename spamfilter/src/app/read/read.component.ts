@@ -13,6 +13,10 @@ export class ReadComponent implements OnInit {
   private mailId: any;
   private mailContent: any;
 
+  public setMail(isi){
+    this.mailContent = isi;
+  }
+
   constructor(
     private DataService: AppService,
     private router: Router,
@@ -23,8 +27,17 @@ export class ReadComponent implements OnInit {
     });
   }
 
+  getEmailContent(id) {
+    this.DataService.getRequest(this.DataService.urlDetailMail+ '?id=' + id)
+    .subscribe(data =>{
+      
+        this.setMail(data.data);
+        console.log(this.mailContent)
+    })
+  }
+
   ngOnInit() {
-    this.mailContent = this.DataService.getEmailContent(this.mailId);
+    this.getEmailContent(this.mailId);
   }
 
   deleteThis() {

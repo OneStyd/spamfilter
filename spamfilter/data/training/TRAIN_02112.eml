@@ -1,0 +1,1 @@
+Re  ldconfig   usr lib libwins so is not an ELF file   it has the  wrong magic bytes at the startEl            a las              Anand Sivaram escribi      resending to the list     Did you try  file  usr lib libwins so  to see the file type   Greetings       Camale  n        To UNSUBSCRIBE  email to debian    with a subject of  unsubscribe   Trouble  Contact   Archive      

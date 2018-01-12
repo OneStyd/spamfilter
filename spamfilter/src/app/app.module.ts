@@ -13,7 +13,6 @@ import { FooterComponent } from './footer/footer.component';
 import { InboxComponent } from './inbox/inbox.component';
 import { SentComponent } from './sent/sent.component';
 import { SpamComponent } from './spam/spam.component';
-import { TrashComponent } from './trash/trash.component';
 import { NoContentComponent } from './no-content/no-content.component';
 
 
@@ -28,7 +27,6 @@ import { NoContentComponent } from './no-content/no-content.component';
     InboxComponent,
     SentComponent,
     SpamComponent,
-    TrashComponent,
     NoContentComponent
   ],
   imports: [
@@ -41,7 +39,6 @@ import { NoContentComponent } from './no-content/no-content.component';
       { path: 'inbox', component: InboxComponent },
       { path: 'sent', component: SentComponent },
       { path: 'spam', component: SpamComponent },
-      { path: 'trash', component: TrashComponent },
       { path: 'read/:id', component: ReadComponent },
       { path: '**', component: NoContentComponent }
     ]),

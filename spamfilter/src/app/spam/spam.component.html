@@ -27,8 +27,8 @@
                     [ngClass]="(email.read=='unread')?'unread':'read'"
                     (click)="readThis(email.id)">
                   <td>{{ email.id }}</td>
-                  <td>{{ email.senderName }}</td>
-                  <td><b>{{ email.title }} - </b>{{ email.content }}</td>
+                  <td>{{ email.frommail }}</td>
+                  <td><b>{{ email.subject }} - </b>{{ email.content }}</td>
                   <td>{{ email.date }}</td>
                 </tr>
               </tbody>
